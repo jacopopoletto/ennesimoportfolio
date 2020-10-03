@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
     letter-spacing: 0;
+    margin-bottom: 0.5rem;
 }
 
 h2 {
@@ -69,6 +70,9 @@ a {
     font-style: italic;
 }
 
+.hidden {
+    display: none;
+}
 
 
 /* NAV STYLE*/
@@ -100,6 +104,10 @@ nav .logo span {
 
 nav .logo:hover, nav .logo:active, nav ul li a:hover, nav ul li a:active {
     text-decoration: underline;
+}
+
+li {
+    list-style: none;
 }
 
 .nav__links {
@@ -209,6 +217,25 @@ header .btn:hover, .btn:hover {
 .hero-hover:hover + .hero-image, .hero-hover:active + .hero-image {
     display: flex;
 }
+
+header .project__header__details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+header .project__header__details div {
+    width: calc(50% - 1rem);
+}
+
+header .project__header__details div:not(:last-child) {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
 
 header .project__external__links {
     width: 100%;
@@ -356,9 +383,21 @@ margin-top: 4rem;
         font-size: 3rem;
     }
 
+    h2 {
+        font-size: 2rem;
+    }
+
     header h1 .btn {
         padding: 0.5rem calc(var(--h1-tablet) / 2);
         border-radius: var(--h1-tablet);
+    }
+
+    header .project__header__details div {
+        width: calc((100% / 4) - 3rem) ;
+    }
+
+    header .project__header__details div:not(:last-child) {
+        margin-bottom: 0;
     }
 
     main .selected__project .project__info__container {
@@ -369,6 +408,8 @@ margin-top: 4rem;
     main .images__container figure {
         width: calc(50% - 0.5rem);
     }
+
+
 
 
 }
@@ -439,8 +480,7 @@ margin-top: 4rem;
     }
 
     main h3 {
-        margin-top: 0;
-
+        margin-top: 1rem;
     }
 
     main .project__image, main .project__video {
@@ -458,7 +498,7 @@ margin-top: 4rem;
     }
 
     main .pagination__container {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     #about .cv__section__container {
@@ -466,7 +506,7 @@ margin-top: 4rem;
     }
 
     #about .cv__section__container:first-child {
-        margin-top: 0;
+        margin-top: 1rem;
         }
 
     #about .cv__section__container h4 {
