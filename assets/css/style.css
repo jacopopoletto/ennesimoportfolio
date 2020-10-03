@@ -223,7 +223,7 @@ header .project__header__details {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     width: 100%;
 }
 
@@ -231,10 +231,6 @@ header .project__header__details div {
     width: calc(50% - 1rem);
     margin-right: 1rem;
     margin-bottom: 1rem;
-}
-
-header .project__header__details div:not(:last-child) {
-
 }
 
 
@@ -247,11 +243,11 @@ header .project__external__links {
 }
 
 header .project__external__links a {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 header .project__external__links a:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 main {
@@ -260,7 +256,7 @@ main {
 }
 
 main h3 {
-    margin-top: 4rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -304,6 +300,7 @@ main .project__description .project__title {
 
 main .project__description .project__paragraph {
     font-size: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 main .project__video {
@@ -393,6 +390,10 @@ margin-top: 4rem;
         border-radius: var(--h1-tablet);
     }
 
+    header .project__header__details {
+        margin-bottom: 1rem;
+    }
+
     header .project__header__details div {
         width: calc((100% / 4) - 3rem) ;
     }
@@ -401,13 +402,25 @@ margin-top: 4rem;
         margin-bottom: 0;
     }
 
+    main h3 {
+        margin-top: 1rem;
+    }
+
     main .selected__project .project__info__container {
         flex-direction: row;
         justify-content: space-between;
     }
 
+    main .project__description .project__paragraph {
+        margin-bottom: 1.5rem;
+    }
+
     main .images__container figure {
         width: calc(50% - 0.5rem);
+    }
+
+    main .pagination__container {
+        font-size: 1.5rem;
     }
 
 
@@ -456,6 +469,14 @@ margin-top: 4rem;
         left: 25%;
     }
 
+    header .project__header__details div {
+        width: calc((100% / 2) - 1rem) ;
+    }
+
+    header .project__header__details div:not(:last-child) {
+        margin-bottom: 1rem;
+    } 
+
 
     main .selected__project {
         margin-bottom: var(--h1-desktop);
@@ -480,9 +501,6 @@ margin-top: 4rem;
         width: 50%;
     }
 
-    main h3 {
-        margin-top: 1rem;
-    }
 
     main .project__image, main .project__video {
         width: 100%;
@@ -496,10 +514,6 @@ margin-top: 4rem;
 
     main .project__description .project__paragraph:last-child {
         margin-bottom: 0;
-    }
-
-    main .pagination__container {
-        font-size: 1.5rem;
     }
 
     #about .cv__section__container {
@@ -521,4 +535,14 @@ margin-top: 4rem;
     }
 
 
+}
+
+@media screen and (min-width: 1440px) {
+    header .project__header__details div {
+        width: calc((100% / 4) - 3rem) ;
+    }
+
+    header .project__header__details div:not(:last-child) {
+        margin-bottom: 1rem;
+    } 
 }
