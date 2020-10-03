@@ -229,11 +229,12 @@ header .project__header__details {
 
 header .project__header__details div {
     width: calc(50% - 1rem);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 header .project__header__details div:not(:last-child) {
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+
 }
 
 
